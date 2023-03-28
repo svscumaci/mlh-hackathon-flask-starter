@@ -8,3 +8,5 @@ RUN sudo apt install python3
 RUN sudo apt install python3-pip
 RUN apt-get install libpq-dev
 RUN pip install -r requirements.txt
+RUN pip uninstall python-dotenv
+RUN pip install python-dotenv==0.17.1
